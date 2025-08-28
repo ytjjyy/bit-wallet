@@ -57,3 +57,5 @@ ${notify_url}
 ```json
 SUCCESS
 ```
+## 收银台展
+![收银台](./show.jpg)
