@@ -58,4 +58,4 @@ ${notify_url}
 SUCCESS
 ```
 ## 收银台展示
-![收银台](./show.jpg)
+![收银台](./show.png)
