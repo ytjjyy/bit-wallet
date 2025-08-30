@@ -49,7 +49,7 @@ ${notify_url}
 | amount        | float64 | 是   | 订单金额                                               |
 | channel_id    | int64   | 是   | 通道编号，可选值：<br>1 = TRC20<br>2 = ERC20<br>3 = BEP20             |
 | out_trade_no  | string  | 是   | 商户订单号                                           |
-| status        | string  | 是   | 回调状态，可选值：<br>0 = 等待支付<br>1 = 支付成功<br>2 = 支付超时|
+| status        | string  | 是   | 回调状态，可选值：<br>1 = 等待支付<br>2 = 支付成功<br>3 = 支付超时|
 | sign          | string  | 是   | 签名字符串                                                |
 
 ### 返回示例
