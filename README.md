@@ -1,4 +1,3 @@
-# API 接口文档（内部使用）
 
 ## 签名规则
 - 使用 **HMAC-SHA256** 进行签名 签名字符串统一为小写 
@@ -37,6 +36,29 @@
     }
 }
 ```
+## 查询订单
+/api/order/query
+### 请求参数
+
+| 参数名        | 类型    | 必填 | 说明                                                                 |
+|---------------|---------|------|----------------------------------------------------------------------|
+| app_id        | int64   | 是   | 商户编号                                                  |
+| out_trade_no  | string  | 是   | 商户订单号                                           |
+| sign          | string  | 是   | 签名字符串                                                |
+### 返回示例
+
+```json
+{
+    "code": 0,
+    "message": "success",
+    "data": {
+        "address": "TYtVuT4PNgGkAhKDKnwYXPCSzZCj4xevth",
+        "amount": "200.00000",
+        "channel_id": 1,
+        "out_trade_no": "da5b7e975dde61",
+        "status": 2
+    }
+}
 
 
 ## 回调通知
